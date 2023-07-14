@@ -53,7 +53,7 @@
 run emulator    
 ```sh
 cd aosp/out/target/product/vsoc_riscv64
-HOME=$PWD ./bin/launch_cvd -cpus=8 --memory_mb=8192 -qemu_binary_dir=/home/cluster/workstation/PLLAB/qemu/build --gpu_mode=drm_virgl -guest_enforce_security=false --start_webrtc=true
+sudo HOME=$PWD ./bin/launch_cvd -cpus=8 --memory_mb=8192 -qemu_binary_dir=/home/cluster/code/env/qemu/build --gpu_mode=drm_virgl -guest_enforce_security=false --start_webrtc=true
 ```
 run vnc-client to render the screen
 ```
