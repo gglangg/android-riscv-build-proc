@@ -27,7 +27,7 @@
     $ make -j
     ```
     編譯後的target image(riscv64)會在aosp/out/target/product/vsoc_riscv64，而每個image編譯完後都會有對應的host image在aosp/out/host/linux-x86，這裡將linux-x86/* 所有檔案複製到aosp/out/target/product/vsoc_riscv64下
-    ```
+    
 
 * cuttlefish
         
@@ -42,7 +42,6 @@
     ../configure --enable-gio --enable-kvm --enable-gcov --enable-spice --enable-virglrenderer --enable-vnc --enable-gtk --enable-opengl --prefix=~/workstation/PLLAB/qemu/build
     make -j32
     ```
-
     安裝好後在build資料匣下測試一次qemu-system-riscv64。
     ```sh
     ./qemu-system-riscv64 -display egl-headless
